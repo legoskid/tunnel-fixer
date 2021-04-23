@@ -274,7 +274,8 @@ console.log('%cHi there. If you find a bug or an exploit, please report it to me
                 var link = document.createElement('a')
                 link.className = 'thumbnail'
                 link.href = '#view/' + thisnode.url
-                link.innerHTML = (thisnode.image ? '<img src="data:image/png;base64,' + thisnode.image + '"/>' : '<img src="http://computernewb.com/screenshots/' + thisnode.url + '.jpg"/>') + '<div class="caption"><h4>' + thisnode.name + '</h4></div>';
+				var sanitizedcaption = DOMPurify.sanitize(thisnode.name, {USE_PROFILES: {html: true}});
+                link.innerHTML = (thisnode.image ? '<img src="data:image/png;base64,' + thisnode.image + '"/>' : '<img src="http://computernewb.com/screenshots/' + thisnode.url + '.jpg"/>') + '<div class="caption"><h4>' + sanitizedcaption + '</h4></div>';
                 link.onclick = function(event) {
                     event.preventDefault()
                     tunnel.onstatechange = null
