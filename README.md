@@ -2,10 +2,13 @@
 This is a fork of the original tunnel-fixer.
 ## Q&A
 > Why?
+
 The last commit on the original was April 23, and doesn't work anymore.
 > You are going to get banned!
+
 As long as you don't abuse it, you won't.
 > Why doesn't the thing doesn't let me join VMs?
+
 You accessed collabvm.html directly. Set it up properly.
 ## How to use
 1. Go onto CollabVM
