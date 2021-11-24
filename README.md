@@ -1,13 +1,13 @@
-#tunnel-fixer
+# tunnel-fixer
 This is a fork of the original tunnel-fixer.
-##Q&A
->Why?
+## Q&A
+> Why?
 The last commit on the original was April 23, and doesn't work anymore.
->You are going to get banned!
+> You are going to get banned!
 As long as you don't abuse it, you won't.
->Why doesn't the thing doesn't let me join VMs?
+> Why doesn't the thing doesn't let me join VMs?
 You accessed collabvm.html directly. Set it up properly.
-##How to use
+## How to use
 1. Go onto CollabVM
 2. Install a CORS extension because you won't fix it yourself (i use https://addons.mozilla.org/en-US/firefox/addon/moesif-origin-cors-changer1/)
 3. Clone the repository
